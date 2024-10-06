@@ -1,0 +1,23 @@
+# permissions for end users to view cronjobs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: cron-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: cronjob-viewer-role
+rules:
+- apiGroups:
+  - batch.pinata.cloud.mts.ru
+  resources:
+  - cronjobs
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - batch.pinata.cloud.mts.ru
+  resources:
+  - cronjobs/status
+  verbs:
+  - get
