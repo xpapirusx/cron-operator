@@ -8,7 +8,7 @@ metadata:
   name: cronjob-editor-role
 rules:
 - apiGroups:
-  - batch.pinata.cloud.mts.ru
+  - batch.pinata.cloud
   resources:
   - cronjobs
   verbs:
@@ -20,7 +20,7 @@ rules:
   - update
   - watch
 - apiGroups:
-  - batch.pinata.cloud.mts.ru
+  - batch.pinata.cloud
   resources:
   - cronjobs/status
   verbs:

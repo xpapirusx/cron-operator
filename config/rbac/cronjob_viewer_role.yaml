@@ -8,7 +8,7 @@ metadata:
   name: cronjob-viewer-role
 rules:
 - apiGroups:
-  - batch.pinata.cloud.mts.ru
+  - batch.pinata.cloud
   resources:
   - cronjobs
   verbs:
@@ -16,7 +16,7 @@ rules:
   - list
   - watch
 - apiGroups:
-  - batch.pinata.cloud.mts.ru
+  - batch.pinata.cloud
   resources:
   - cronjobs/status
   verbs:

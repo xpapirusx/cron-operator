@@ -1,4 +1,4 @@
-apiVersion: batch.pinata.cloud.mts.ru/v1
+apiVersion: batch.pinata.cloud/v1
 kind: CronJob
 metadata:
   labels:
