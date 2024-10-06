@@ -19,7 +19,6 @@ package main
 import (
 	"crypto/tls"
 	"flag"
-	"fmt"
 	"os"
 
 	// Import all Kubernetes client auth plugins (e.g. Azure, GCP, OIDC, etc.)
@@ -55,7 +54,6 @@ func init() {
 
 func main() {
 	var metricsAddr string
-	fmt.Println("START LOL")
 	var enableLeaderElection bool
 	var probeAddr string
 	var secureMetrics bool
